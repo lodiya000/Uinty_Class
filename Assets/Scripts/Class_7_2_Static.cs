@@ -1,4 +1,4 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class Class_7_2_Static : MonoBehaviour
@@ -6,8 +6,8 @@ public class Class_7_2_Static : MonoBehaviour
     public int inventoryWater = 10;
     public static int inventoryProp = 20;
 
-    public  string skillMain = "¤õµK½b";
-    public static string skillSecond = "ªvÂ¡³N";
+    public  string skillMain = "ç«ç„°ç®­";
+    public static string skillSecond = "æ²»ç™’è¡“";
 
     private float attatk = 10;
     private static float mp = 10;
@@ -16,38 +16,38 @@ public class Class_7_2_Static : MonoBehaviour
     {
         //inventoryWater = 7;
         //inventoryProp = 15;
-        Debug.Log($"<color=#7f7>ÃÄ¤ô:{inventoryWater}</color>");
-        Debug.Log($"<color=#7f7>¹D¨ã:{inventoryProp}</color>");
+        Debug.Log($"<color=#7f7>è—¥æ°´:{inventoryWater}</color>");
+        Debug.Log($"<color=#7f7>é“å…·:{inventoryProp}</color>");
     }
 
     public void Punch()
     {
-        Debug.Log("<color=#7f7>¨Ï¥Î®±À»</color>");
-        Debug.Log($"<color=#f9e>§ğÀ»¤O{attatk}</color>");
-        Debug.Log($"<color=#f9e>Å]¤O{mp}</color>");
+        Debug.Log("<color=#7f7>ä½¿ç”¨æ‹³æ“Š</color>");
+        Debug.Log($"<color=#f9e>æ”»æ“ŠåŠ›{attatk}</color>");
+        Debug.Log($"<color=#f9e>é­”åŠ›{mp}</color>");
 
     }
 
     public static void Kick()
     {
-        Debug.Log("<color=#7f7>¨Ï¥Î½ğÀ»</color>");
-        //Debug.Log($"<color=#f9e>§ğÀ»¤O{attatk}</color>");
-        Debug.Log($"<color=#f9e>Å]¤O{mp}</color>");
+        Debug.Log("<color=#7f7>ä½¿ç”¨è¸¢æ“Š</color>");
+        //Debug.Log($"<color=#f9e>æ”»æ“ŠåŠ›{attatk}</color>");
+        Debug.Log($"<color=#f9e>é­”åŠ›{mp}</color>");
     }
 
     private void Start()
     {
         inventoryWater++;
-        Debug.Log($"<color=#7f7>ÃÄ¤ô:{inventoryWater}</color>");
+        Debug.Log($"<color=#7f7>è—¥æ°´:{inventoryWater}</color>");
         inventoryProp++;
-        Debug.Log($"<color=#7f7>¹D¨ã:{inventoryProp}</color>");
+        Debug.Log($"<color=#7f7>é“å…·:{inventoryProp}</color>");
     }
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            SceneManager.LoadScene("½Òµ{_7_³õ´º»PÀRºA");
+            SceneManager.LoadScene("èª²ç¨‹_7_å ´æ™¯èˆ‡éœæ…‹");
         }
     }
 
